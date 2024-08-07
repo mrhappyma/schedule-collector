@@ -1,0 +1,28 @@
+<h1>add a course</h1>
+<p>enter all information exactly as it appears on your schedule</p>
+
+<%= form_for @course do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+    <%= error_messages_for @course, :name %>
+  </div>
+  <div>
+    <%= f.label :teacher %><br>
+    <%= f.text_field :teacher %>
+    <%= error_messages_for @course, :teacher %>
+  </div>
+  <div>
+    <%= f.label :room %><br>
+    <%= f.number_field :room %>
+    <%= error_messages_for @course, :room %>
+  </div>
+  <div>
+    <%= f.label :period %><br>
+    <%= f.number_field :period %>
+    <%= error_messages_for @course, :period %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
