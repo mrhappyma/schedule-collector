@@ -1,4 +1,9 @@
 <p>
-  <strong>period <%=course.period %> <%= course.name %></strong><br>
+  <strong>Period <%=course.period %> <%= course.name %></strong><br>
   <%=course.teacher %> - room <%=course.room %><br>
+  <div>
+    <% course.schedules.each do |schedule| %>
+      <li><%= link_to schedule.name %></li>
+    <% end %>
+  </div>
 </p>

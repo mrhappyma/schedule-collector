@@ -1,0 +1,29 @@
+<h1>submit your schedule!</h1>
+<p>find out who you share classes with</p>
+
+<%= form_for @schedule do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+    <%= error_messages_for @schedule, :name %>
+  </p>
+  <p>
+    <%= f.label :grade %><br>
+    <%= f.number_field :grade %>
+    <%= error_messages_for @schedule, :grade %>
+  </p>
+  <p>
+    <%= f.label :courses %><br>
+    <p>course not listed? <%= link_to "add a course", new_course_path %></p>
+    <%= f.collection_check_boxes :course_ids, @courses, :id, -> (c) {"Period #{c.period} #{c.name}"} do |b| %>
+      <div class="collection-check-box">
+        <%= b.check_box %>
+        <%= b.label %>
+      </div>
+    <% end %>
+    <%= error_messages_for @schedule, :courses %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,3 +1,3 @@
 <h1>schedule collector</h1>
-<p><%= @schedules.length %> people have submitted their schedule</p>
+<p><%= pluralize(@schedules.length, 'person') %> submitted their schedule</p>
 <%= link_to 'submit your schedule', new_schedule_path %>
