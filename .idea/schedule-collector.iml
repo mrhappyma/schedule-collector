@@ -840,47 +840,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="debug (v1.9.2) [path][gem]" type="rubylib">
-        <properties>
-          <option name="additionalInfo">
-            <AdditionalInfo>
-              <option name="authors" value="N/A" />
-              <option name="email" value="N/A" />
-              <option name="homepage" value="N/A" />
-              <option name="summary" value="N/A" />
-            </AdditionalInfo>
-          </option>
-          <option name="fromPath" value="true" />
-          <option name="name" value="debug" />
-          <option name="requirePaths">
-            <list>
-              <option value="lib" />
-            </list>
-          </option>
-          <option name="url" value="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2" />
-          <option name="version" value="1.9.2" />
-        </properties>
-        <CLASSES>
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/exe" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/ext" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/lib" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/misc" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/exe" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/ext" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/lib" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/misc" />
-        </SOURCES>
-        <excluded>
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/exe" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/ext" />
-          <root url="file://$USER_HOME$/.gems_cache/ruby/3.0.0/gems/debug-1.9.2/misc" />
-        </excluded>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="drb (v2.2.1) [path][gem]" type="rubylib">
         <properties>
           <option name="additionalInfo">
