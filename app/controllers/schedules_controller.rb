@@ -1,6 +1,7 @@
 class SchedulesController < ApplicationController
   def show
     @schedule = Schedule.find(params[:id])
+    @courses = @schedule.courses.sort_by(&:period)
   end
 
   def new

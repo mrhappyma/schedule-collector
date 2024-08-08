@@ -3,7 +3,7 @@
   <%=course.teacher %> - room <%=course.room %><br>
   <div>
     <% course.schedules.each do |schedule| %>
-      <li><%= link_to schedule.name %></li>
+      <li><%= link_to schedule.name, schedule %></li>
     <% end %>
   </div>
 </p>
