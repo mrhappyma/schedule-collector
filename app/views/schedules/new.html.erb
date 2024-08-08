@@ -1,4 +1,4 @@
-<h1>submit your schedule!</h1>
+<% content_for :title, "submit your schedule!" %>
 
 <%= form_for @schedule do |f| %>
   <p>
@@ -14,7 +14,7 @@
   <p>
     <%= f.label :courses %><br>
     <p>course not listed? <%= link_to "add a course", new_course_path %></p>
-    <%= f.collection_check_boxes :course_ids, @courses, :id, -> (c) {"Period #{c.period} #{c.name}"} do |b| %>
+    <%= f.collection_check_boxes :course_ids, @courses, :id, :title do |b| %>
       <div class="collection-check-box">
         <%= b.check_box %>
         <%= b.label %>

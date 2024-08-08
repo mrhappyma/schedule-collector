@@ -11,4 +11,7 @@ class Course < ApplicationRecord
 
   validates_uniqueness_of :name, scope: :period, message: "already exists in this period"
 
+  def title
+    "Period #{period} #{name}"
+  end
 end

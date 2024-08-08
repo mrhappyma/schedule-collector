@@ -1,4 +1,4 @@
-<h1><%= @schedule.name %>'s schedule</h1>
+<% content_for :title, "#{@schedule.name}'s schedule" %>
 
 <% @courses.each do |course| %>
   <%= render course %>

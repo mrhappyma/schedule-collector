@@ -1,4 +1,5 @@
-<h1>schedule collector</h1>
+<% content_for :title, "schedule collector" %>
+
 <p>find out who you share classes with!</p>
 <p><%= pluralize(@schedules.length, 'person') %> submitted their schedule (or i did it for them hehe)</p>
 <%= link_to 'submit your schedule', new_schedule_path %>

@@ -1,5 +1,5 @@
 <p>
-  <strong>Period <%=course.period %> <%= course.name %></strong><br>
+  <strong><%= course.title %></strong><br>
   <%=course.teacher %> - room <%=course.room %><br>
   <div>
     <% course.schedules.each do |schedule| %>
